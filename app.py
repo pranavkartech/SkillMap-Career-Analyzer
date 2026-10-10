@@ -454,7 +454,7 @@ with profile_col:
     selected = st.multiselect(
         "Skills you have worked with",
         options=SKILL_CATALOG,
-        default=[s for s in st.session_state.selected_skills if s in SKILL_CATALOG],
+        default=[],
         key="skills_picker",
         help="Choose skills you can explain or demonstrate—not skills you only recognise by name.",
     )
